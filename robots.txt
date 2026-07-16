@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://webprojects.anikethchavare.com/sitemap.xml

@@ -18,6 +18,9 @@ The format will be:
 
 ## Unreleased
 
+### Added
+- Added GitHub sponsorship information in the repository.
+
 ### Fixed
 - Fixed an issue where the HTML pages weren't loading due to a `TemplateResponse` bug in `jinja2`.
 

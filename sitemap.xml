@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://webprojects.anikethchavare.com/</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2026-07-16</lastmod>
+</url>
+<url>
+  <loc>http://webprojects.anikethchavare.com/about</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2026-07-16</lastmod>
+</url>
+<url>
+  <loc>http://webprojects.anikethchavare.com/tennis</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2026-07-16</lastmod>
+</url>
+<url>
+  <loc>http://webprojects.anikethchavare.com/rps</loc>
+  <priority>0.8</priority>
+  <changefreq>monthly</changefreq>
+  <lastmod>2026-07-16</lastmod>
+</url>
+</urlset>

@@ -20,6 +20,7 @@ The format will be:
 
 ### Added
 - Added GitHub sponsorship information in the repository.
+- Included a sitemap for the website.
 
 ### Fixed
 - Fixed an issue where the HTML pages weren't loading due to a `TemplateResponse` bug in `jinja2`.

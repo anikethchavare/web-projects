@@ -28,7 +28,7 @@ from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
 
 # Constants
-VERSION = "1.0.0"
+VERSION = "0.1.0"
 SECURITY_HEADERS = {
     "X-Frame-Options": "SAMEORIGIN",
     "X-Content-Type-Options": "nosniff",
@@ -55,7 +55,7 @@ app = FastAPI(
 templates = Jinja2Templates(directory="templates")
 
 # Configuring Middleware
-#app.add_middleware(HTTPSRedirectMiddleware)
+app.add_middleware(HTTPSRedirectMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

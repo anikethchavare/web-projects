@@ -51,6 +51,9 @@ app = FastAPI(
     redoc_url=None
 )
 
+# Initializing Jinja2
+templates = Jinja2Templates(directory="templates")
+
 # Configuring Middleware
 #app.add_middleware(HTTPSRedirectMiddleware)
 app.add_middleware(
@@ -78,7 +81,7 @@ app.mount("/images", StaticFiles(directory="templates/images"), name="/images")
 # Route 1: Index (app)
 @app.get("/")
 async def app_index(request: Request):
-    return Jinja2Templates(directory="templates").TemplateResponse("index.html", {"request": request}, status_code=200)
+    return templates.TemplateResponse(request, "index.html", status_code=200)
 
 # Route 2: Favicon (app)
 @app.get("/favicon.ico")
@@ -98,13 +101,12 @@ async def app_sitemap(request: Request):
 # Route 5: About (app)
 @app.get("/about")
 async def app_about(request: Request):
-    return Jinja2Templates(directory="templates").TemplateResponse("about.html", {"request": request}, status_code=200)
+    return templates.TemplateResponse(request, "about.html", status_code=200)
 
 # Route 6: Tennis (app)
 @app.get("/games/tennis")
 async def app_games_tennis(request: Request):
-    return Jinja2Templates(directory="templates").TemplateResponse("tennis.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "tennis.html", context={
         "css_nonce": secrets.token_urlsafe(32),
         "js_nonce": secrets.token_urlsafe(32)
     }, status_code=200)
@@ -112,8 +114,7 @@ async def app_games_tennis(request: Request):
 # Route 7: Rock Paper Scissors (app)
 @app.get("/games/rps")
 async def app_games_rps(request: Request):
-    return Jinja2Templates(directory="templates").TemplateResponse("rock-paper-scissors.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "rock-paper-scissors.html", context={
         "css_nonce": secrets.token_urlsafe(32),
         "js_nonce": secrets.token_urlsafe(32)
     }, status_code=200)
@@ -121,7 +122,6 @@ async def app_games_rps(request: Request):
 # Exception Handler 1: 404 (app)
 @app.exception_handler(404)
 async def app_exception_handler_404(request: Request, exc: HTTPException):
-    return Jinja2Templates(directory="templates").TemplateResponse("404.html", {
-        "request": request,
+    return templates.TemplateResponse(request, "404.html", context={
         "css_nonce": secrets.token_urlsafe(32)
     }, status_code=404)

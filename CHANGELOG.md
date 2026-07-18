@@ -23,6 +23,7 @@ The format will be:
 - Included a sitemap for the website.
 
 ### Changed
+- **Dependency Changes:** Updated `fastapi`.
 - Edited HTML metadata in the web pages.
 
 ### Fixed

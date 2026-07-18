@@ -22,6 +22,9 @@ The format will be:
 - Added GitHub sponsorship information in the repository.
 - Included a sitemap for the website.
 
+### Changed
+- Edited HTML metadata in the web pages.
+
 ### Fixed
 - Fixed an issue where the HTML pages weren't loading due to a `TemplateResponse` bug in `jinja2`.
 

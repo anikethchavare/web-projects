@@ -21,6 +21,7 @@ The format will be:
 ### Added
 - Added GitHub sponsorship information in the repository.
 - Included a sitemap for the website.
+- Implemented Google Analytics in the website.
 
 ### Changed
 - **Dependency Changes:** Updated `fastapi`.

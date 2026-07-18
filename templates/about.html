@@ -24,7 +24,7 @@ limitations under the License.-->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="The central hub for my live web projects and games.">
-		<meta http-equiv="Content-Security-Policy" content="style-src 'self' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css https://fonts.googleapis.com/css; script-src 'self' https://code.jquery.com/jquery-3.7.1.min.js; img-src 'self' data:; object-src 'none'; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+		<meta http-equiv="Content-Security-Policy" content="style-src 'self' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css https://fonts.googleapis.com/css; script-src 'self' 'nonce-{{ js_nonce }}' https://code.jquery.com/jquery-3.7.1.min.js https://www.googletagmanager.com/gtag/js; img-src 'self' data:; object-src 'none'; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;">
 
 		<!--Title-->
 		<title>About | Aniketh Chavare - Web Projects</title>
@@ -99,9 +99,17 @@ limitations under the License.-->
 
 		<!--JavaScript-->
 		<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-N07K2MKCYX"></script>
 		<script src="js/browser.min.js"></script>
 		<script src="js/breakpoints.min.js"></script>
 		<script src="js/util.js"></script>
 		<script src="js/main.js"></script>
+		<script nonce="{{ js_nonce }}">
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-N07K2MKCYX');
+		</script>
 	</body>
 </html>

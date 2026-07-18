@@ -80,7 +80,9 @@ app.mount("/images", StaticFiles(directory="templates/images"), name="/images")
 # Route 1: Index (app)
 @app.get("/")
 async def app_index(request: Request):
-    return templates.TemplateResponse(request, "index.html", status_code=200)
+    return templates.TemplateResponse(request, "index.html", context={
+        "js_nonce": secrets.token_urlsafe(32)
+    }, status_code=200)
 
 # Route 2: Favicon (app)
 @app.get("/favicon.ico")
@@ -100,7 +102,9 @@ async def app_sitemap(request: Request):
 # Route 5: About (app)
 @app.get("/about")
 async def app_about(request: Request):
-    return templates.TemplateResponse(request, "about.html", status_code=200)
+    return templates.TemplateResponse(request, "about.html", context={
+        "js_nonce": secrets.token_urlsafe(32)
+    }, status_code=200)
 
 # Route 6: Tennis (app)
 @app.get("/games/tennis")
@@ -122,5 +126,6 @@ async def app_games_rps(request: Request):
 @app.exception_handler(404)
 async def app_exception_handler_404(request: Request, exc: HTTPException):
     return templates.TemplateResponse(request, "404.html", context={
-        "css_nonce": secrets.token_urlsafe(32)
+        "css_nonce": secrets.token_urlsafe(32),
+        "js_nonce": secrets.token_urlsafe(32)
     }, status_code=404)

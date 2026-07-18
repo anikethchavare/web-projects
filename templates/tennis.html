@@ -24,7 +24,7 @@ limitations under the License.-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="A simple and interactive tennis game using JavaScript.">
-        <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'nonce-{{ css_nonce }}'; script-src 'self' 'nonce-{{ js_nonce }}'; img-src 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+        <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'nonce-{{ css_nonce }}'; script-src 'self' 'nonce-{{ js_nonce }}' https://www.googletagmanager.com/gtag/js; img-src 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;">
 
         <!--Title-->
         <title>Tennis | Aniketh Chavare - Web Projects</title>
@@ -42,6 +42,14 @@ limitations under the License.-->
         <center><canvas id="gameCanvas" width="800" height="549"></canvas></center>
 
         <!--JavaScript-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N07K2MKCYX"></script>
+        <script nonce="{{ js_nonce }}">
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-N07K2MKCYX');
+		</script>
         <script nonce="{{ js_nonce }}">
             // Variables
             var canvas;

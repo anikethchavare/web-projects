@@ -24,7 +24,7 @@ limitations under the License.-->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Error 404: Page not Found">
-        <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'nonce-{{ css_nonce }}' fonts.googleapis.com; script-src 'self'; img-src 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;">
+        <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'nonce-{{ css_nonce }}' fonts.googleapis.com; script-src 'self' 'nonce-{{ js_nonce }}' https://www.googletagmanager.com/gtag/js; img-src 'self'; object-src 'none'; base-uri 'self'; upgrade-insecure-requests; block-all-mixed-content;">
 
         <!--Title-->
         <title>Error 404 | Aniketh Chavare - Web Projects</title>
@@ -154,5 +154,15 @@ limitations under the License.-->
                 <a href="/">Homepage</a>
             </div>
         </div>
+
+        <!--JavaScript-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-N07K2MKCYX"></script>
+        <script nonce="{{ js_nonce }}">
+  			window.dataLayer = window.dataLayer || [];
+  			function gtag(){dataLayer.push(arguments);}
+  			gtag('js', new Date());
+
+  			gtag('config', 'G-N07K2MKCYX');
+		</script>
     </body>
 </html>

@@ -75,7 +75,6 @@ async def middleware_security_headers(request: Request, call_next):
 # Mounting Assets
 app.mount("/js", StaticFiles(directory="templates/js"), name="/js")
 app.mount("/css", StaticFiles(directory="templates/css"), name="css")
-app.mount("/fonts", StaticFiles(directory="templates/fonts"), name="/fonts")
 app.mount("/images", StaticFiles(directory="templates/images"), name="/images")
 
 # Route 1: Index (app)

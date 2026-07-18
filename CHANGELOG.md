@@ -30,6 +30,9 @@ The format will be:
 ### Fixed
 - Fixed an issue where the HTML pages weren't loading due to a `TemplateResponse` bug in `jinja2`.
 
+### Removed
+- Deleted the redundant `/fonts` directory.
+
 ## [0.1.0] - 2026-07-16
 
 ### Added

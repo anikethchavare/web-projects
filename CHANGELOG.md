@@ -25,6 +25,7 @@ The format will be:
 ### Changed
 - **Dependency Changes:** Updated `fastapi`.
 - Edited HTML metadata in the web pages.
+- Edited the content in the `/about` page.
 
 ### Fixed
 - Fixed an issue where the HTML pages weren't loading due to a `TemplateResponse` bug in `jinja2`.

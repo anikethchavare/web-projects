@@ -16,6 +16,11 @@ The format will be:
 - Performance
 - Documentation
 
+## Unreleased
+
+### Documentation
+- Split the `🚀 Featues & Tech Stack` section into 2 separate sections.
+
 ## [1.0.0] - 2026-07-22
 
 ### Added

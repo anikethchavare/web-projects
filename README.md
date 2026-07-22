@@ -27,7 +27,7 @@
 
 <hr>
 
-## 1. 🚀 Features & Tech Stack
+## 1. 🚀 Features
 
 This repository serves as a lightweight, serverless web application hosting interactive web tools and mini-games. It combines FastAPI's low-latency backend routing with Jinja2 frontend templating.
 
@@ -38,6 +38,10 @@ This repository serves as a lightweight, serverless web application hosting inte
 5. **SEO & Crawl Optimization:** Pre-configured with clean route mappings, `robots.txt`, and an automated `sitemap.xml` for structured search engine indexing.
 6. **Serverless Deployment:** Engineered with `vercel.json` and modular FastAPI handlers for instant, global deployment on Vercel's edge network.
 
+<hr>
+
+## 2. 🛠️ Tech Stack
+
 The core technologies powering the application backend, dynamic rendering engine, and deployment pipeline include:
 
 * **Backend Framework: [FastAPI](https://fastapi.tiangolo.com) (v0.139.2)** - Asynchronous framework for low-latency request handling.
@@ -47,7 +51,7 @@ The core technologies powering the application backend, dynamic rendering engine
 
 <hr>
 
-## 2. 🎮 List of Projects
+## 3. 🎮 List of Projects
 
 This repository hosts a curated collection of interactive, lightweight mini-games served directly through Jinja2 templates:
 
@@ -56,7 +60,7 @@ This repository hosts a curated collection of interactive, lightweight mini-game
 
 <hr>
 
-## 3. 📜 License & Changelog
+## 4. 📜 License & Changelog
 
 This project is licensed under the **[Apache License 2.0](https://github.com/anikethchavare/web-projects/blob/main/LICENSE.txt)**. You are free to use, modify, and distribute this software for both commercial and non-commercial purposes, provided original copyright notices and attributions are retained.
 
@@ -64,13 +68,13 @@ Track all notable changes, migrations, and bug fixes in the **[CHANGELOG.md](htt
 
 <hr>
 
-## 4. 🤝 Credits & Acknowledgements
+## 5. 🤝 Credits & Acknowledgements
 
 This project is made possible by the incredible work of the open-source community and the developers whose foundational tools form the core of this website. A comprehensive list of project dependencies and their respective licenses is available in **[CREDITS.md](https://github.com/anikethchavare/web-projects/blob/main/CREDITS.md)**.
 
 <hr>
 
-## 5. 💎 Become a Sponsor
+## 6. 💎 Become a Sponsor
 
 This collection of web projects is built and maintained entirely for open-source development. If these templates, mini-games, or server configurations save you development hours, streamline your personal experiments, or add value to your production workflows, please consider supporting its continuous maintenance and expansion.
 
@@ -86,7 +90,7 @@ Your sponsorship directly helps offset the overhead of serverless compute resour
 
 <hr>
 
-## 6. ✨ Conclusion
+## 7. ✨ Conclusion
 
 Thank you for exploring `web-projects`. Whether you are looking to tinker with the interactive game templates, adapt the serverless FastAPI backend, or use the layout structure for your own projects, feel free to explore and fork the repository.
 

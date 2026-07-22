@@ -28,7 +28,7 @@ from fastapi import FastAPI, Request, HTTPException
 from fastapi.middleware.httpsredirect import HTTPSRedirectMiddleware
 
 # Constants
-VERSION = "0.1.0"
+VERSION = "1.0.0"
 SECURITY_HEADERS = {
     "X-Frame-Options": "SAMEORIGIN",
     "X-Content-Type-Options": "nosniff",

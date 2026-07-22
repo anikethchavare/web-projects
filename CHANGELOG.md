@@ -16,7 +16,7 @@ The format will be:
 - Performance
 - Documentation
 
-## Unreleased
+## [1.0.0] - 2026-07-22
 
 ### Added
 - Added GitHub sponsorship information in the repository.
@@ -46,4 +46,5 @@ The format will be:
 - Established `requirements.txt` with core dependencies (FastAPI, Jinja2).
 
 ---
+[1.0.0]: https://github.com/anikethchavare/web-projects/releases/tag/v1.0.0
 [0.1.0]: https://github.com/anikethchavare/web-projects/releases/tag/v0.1.0

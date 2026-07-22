@@ -19,7 +19,7 @@
     <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">&nbsp;&nbsp;
     <br><br>
-    <img src="https://img.shields.io/badge/version-0.1.0-blue?style=for-the-badge&logo=github&logoColor=white" alt="Version">&nbsp;&nbsp;
+    <img src="https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge&logo=github&logoColor=white" alt="Version">&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/Status-Online-brightgreen?style=for-the-badge&logo=statuspage&logoColor=white" alt="Status: Online">&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/license-Apache_2.0-blue?style=for-the-badge&logo=apache&logoColor=white" alt="Apache 2.0 License">&nbsp;&nbsp;
     <img src="https://img.shields.io/badge/maintained-yes-brightgreen?style=for-the-badge&logo=checkmarx&logoColor=white" alt="Maintenance: Active">
@@ -51,8 +51,8 @@ The core technologies powering the application backend, dynamic rendering engine
 
 This repository hosts a curated collection of interactive, lightweight mini-games served directly through Jinja2 templates:
 
-1. **[Rock Paper Scissors](https://webprojects.anikethchavare.com/games/rps):** A classic hand-game implementation where players compete against a randomized bot logic. Features real-time score tracking, dynamic round results, and styled UI choices.
-2. **[Tennis](https://webprojects.anikethchavare.com/games/tennis):** A responsive, arcade-style 2D tennis game rendered on an HTML5 canvas. Features interactive paddle controls, real-time ball physics, collision detection, and scorekeeping.
+1. **[Tennis Game](https://webprojects.anikethchavare.com/games/tennis):** A responsive, arcade-style 2D tennis game rendered on an HTML5 canvas. Features interactive paddle controls, real-time ball physics, collision detection, and scorekeeping.
+2. **[Rock Paper Scissors](https://webprojects.anikethchavare.com/games/rps):** A classic hand-game implementation where players compete against a randomized bot logic. Features real-time score tracking, dynamic round results, and styled UI choices.
 
 <hr>
 

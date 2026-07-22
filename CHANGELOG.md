@@ -34,6 +34,9 @@ The format will be:
 ### Removed
 - Deleted the redundant `/fonts` directory.
 
+### Documentation
+- Added a `README.md` file.
+
 ## [0.1.0] - 2026-07-16
 
 ### Added
